@@ -1,0 +1,57 @@
+@keyframes upmove {
+    from {
+        top: 200px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes rightmove {
+    0% {
+        opacity: 0;
+        right: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+@keyframes leftmove {
+    0% {
+        opacity: 0;
+        left: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes appear-right {
+    0% {
+        opacity: 0;
+        right: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+@keyframes appear-left {
+    0% {
+        opacity: 0;
+        left: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}

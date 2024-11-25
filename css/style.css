@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.bg-img {
+    height: 703px;
+    background: #bababa;
+    background-blend-mode: multiply;
+    background-image: url('../images/main-img/bg-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1 !important;
+
+}
+
+.navbar .logo {
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.navbar .logo a {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    color: whitesmoke;
+    margin-left: 25px;
+    transition: 0.5s ease;
+}
+
+.navbar ul li a:hover {
+    color: #eae0e0;
+    transform: scale(1.5);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-icons {
+    display: flex;
+}
+
+.main-container {
+    padding: 120px 200px 20px 200px;
+}
+
+.main-text a {
+    font-size: 21px;
+    color: whitesmoke;
+    position: relative;
+    animation: upmove 2s;
+}
+
+.line {
+    width: 4%;
+    border-bottom: 3px solid whitesmoke;
+    margin-bottom: 10px;
+    position: relative;
+    animation: upmove 2s;
+}
+
+.main-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 95px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: upmove 3s;
+}
+
+.btn {
+    padding: 11px 23px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    animation: upmove 4s;
+}
+
+.btn-1 {
+    background-color: #2250fc;
+    color: whitesmoke;
+}
+
+.btn-1:hover {
+    background-color: #0333e8;
+}
+
+.btn-2 {
+    background-color: #fff;
+}
+
+.btn-2:hover {
+    background-color: #eeeded;
+}
+
+.about {
+    padding: 120px 200px 100px 200px;
+}
+
+.about h2 {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 3px;
+    margin-bottom: -10px;
+
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 450px 250px 250px;
+    gap: 80px;
+    padding: 10px;
+}
+
+.grid h3 {
+    font-size: 2.35714286em;
+    line-height: 1.36363636em;
+    font-weight: 500;
+}
+
+.text-md {
+    font-size: 18px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.text-light {
+    color: #7f7f7f;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.btn-services {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 12px 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-services:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.text-sm {
+    font-size: 20px !important;
+    margin-bottom: 12px;
+}
+
+.text-xsm {
+    font-size: 14px;
+}
+
+.text-lg {
+    font-size: 24px;
+}
+
+.ad {
+    background-color: #e8ebecb0;
+    padding: 60px 290px 60px 290px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.ad-text {
+    font-size: 25px;
+    position: relative;
+    animation: rightmove 2s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+
+.ad-btn {
+    background-color: #2250fc;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    animation: leftmove ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+
+.ad-btn:hover {
+    background-color: #0333e8;
+}
+
+
+.appear-right{
+    position: relative;
+    animation: appear-right ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+.appear-left{
+    position: relative;
+    animation: appear-left ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+.projects {
+    background: #d9d9d9;
+    background-blend-mode: multiply;
+    background-image: url('../images/main-img/img-2.jpg');
+    height: 500px;
+}
